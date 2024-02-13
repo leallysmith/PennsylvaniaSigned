@@ -186,7 +186,7 @@ var lyr_PennsylvaniaCounties_12 = new ol.layer.Vector({
                 declutter: true,
                 source:jsonSource_PennsylvaniaCounties_12, 
                 style: style_PennsylvaniaCounties_12,
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/PennsylvaniaCounties_12.png" /> Pennsylvania Counties'
             });
 var format_PennsylvaniaCountyNames_13 = new ol.format.GeoJSON();
@@ -203,50 +203,36 @@ var lyr_PennsylvaniaCountyNames_13 = new ol.layer.Vector({
                 interactive: false,
                 title: '<img src="styles/legend/PennsylvaniaCountyNames_13.png" /> Pennsylvania County Names'
             });
-var format_SignedParcelslastupdated112723_14 = new ol.format.GeoJSON();
-var features_SignedParcelslastupdated112723_14 = format_SignedParcelslastupdated112723_14.readFeatures(json_SignedParcelslastupdated112723_14, 
+var format_SignedParcelslastupdated21224_14 = new ol.format.GeoJSON();
+var features_SignedParcelslastupdated21224_14 = format_SignedParcelslastupdated21224_14.readFeatures(json_SignedParcelslastupdated21224_14, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_SignedParcelslastupdated112723_14 = new ol.source.Vector({
+var jsonSource_SignedParcelslastupdated21224_14 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_SignedParcelslastupdated112723_14.addFeatures(features_SignedParcelslastupdated112723_14);
-var lyr_SignedParcelslastupdated112723_14 = new ol.layer.Vector({
-                declutter: true,
-                source:jsonSource_SignedParcelslastupdated112723_14, 
-                style: style_SignedParcelslastupdated112723_14,
-                interactive: false,
-                title: '<img src="styles/legend/SignedParcelslastupdated112723_14.png" /> Signed Parcels (last updated 11/27/23)'
-            });
-var format_SignedParcelslastupdated112723_15 = new ol.format.GeoJSON();
-var features_SignedParcelslastupdated112723_15 = format_SignedParcelslastupdated112723_15.readFeatures(json_SignedParcelslastupdated112723_15, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_SignedParcelslastupdated112723_15 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_SignedParcelslastupdated112723_15.addFeatures(features_SignedParcelslastupdated112723_15);cluster_SignedParcelslastupdated112723_15 = new ol.source.Cluster({
+jsonSource_SignedParcelslastupdated21224_14.addFeatures(features_SignedParcelslastupdated21224_14);cluster_SignedParcelslastupdated21224_14 = new ol.source.Cluster({
   distance: 10,
-  source: jsonSource_SignedParcelslastupdated112723_15
+  source: jsonSource_SignedParcelslastupdated21224_14
 });
-var lyr_SignedParcelslastupdated112723_15 = new ol.layer.Vector({
+var lyr_SignedParcelslastupdated21224_14 = new ol.layer.Vector({
                 declutter: true,
-                source:cluster_SignedParcelslastupdated112723_15, 
-                style: style_SignedParcelslastupdated112723_15,
-                interactive: true,
-                title: '<img src="styles/legend/SignedParcelslastupdated112723_15.png" /> Signed Parcels (last updated 11/27/23)'
+                source:cluster_SignedParcelslastupdated21224_14, 
+                style: style_SignedParcelslastupdated21224_14,
+                interactive: false,
+                title: '<img src="styles/legend/SignedParcelslastupdated21224_14.png" /> Signed Parcels (last updated 2/12/24)'
             });
-var format_ParcelNames_16 = new ol.format.GeoJSON();
-var features_ParcelNames_16 = format_ParcelNames_16.readFeatures(json_ParcelNames_16, 
+var format_SignedParcelNameslastupdated21224_15 = new ol.format.GeoJSON();
+var features_SignedParcelNameslastupdated21224_15 = format_SignedParcelNameslastupdated21224_15.readFeatures(json_SignedParcelNameslastupdated21224_15, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_ParcelNames_16 = new ol.source.Vector({
+var jsonSource_SignedParcelNameslastupdated21224_15 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_ParcelNames_16.addFeatures(features_ParcelNames_16);
-var lyr_ParcelNames_16 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_ParcelNames_16, 
-                style: style_ParcelNames_16,
-                interactive: false,
-                title: '<img src="styles/legend/ParcelNames_16.png" /> Parcel Names'
+jsonSource_SignedParcelNameslastupdated21224_15.addFeatures(features_SignedParcelNameslastupdated21224_15);
+var lyr_SignedParcelNameslastupdated21224_15 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_SignedParcelNameslastupdated21224_15, 
+                style: style_SignedParcelNameslastupdated21224_15,
+                interactive: true,
+                title: '<img src="styles/legend/SignedParcelNameslastupdated21224_15.png" /> Signed Parcel Names (last updated 2/12/24)'
             });
 var group_48eLowIncomeCredits = new ol.layer.Group({
                                 layers: [lyr_AdditionalSelectionCriteriaGeographicOption2PersistentPovertyCounty_6,lyr_AdditionalSelectionCriteriaGeographicOption1CEJSTEnergy_7,lyr_Category1Eligibility_8,],
@@ -258,8 +244,8 @@ var group_Basemaps = new ol.layer.Group({
                                 layers: [lyr_GoogleTerrain_0,lyr_GoogleImagery_1,lyr_ESRIGray_2,lyr_OpenStreetMap_3,],
                                 title: "Basemaps"});
 
-lyr_GoogleTerrain_0.setVisible(true);lyr_GoogleImagery_1.setVisible(true);lyr_ESRIGray_2.setVisible(true);lyr_OpenStreetMap_3.setVisible(true);lyr_CoalClosureEnergyCommunities_4.setVisible(true);lyr_MSANonMSAsthatareEnergyCommunities_5.setVisible(true);lyr_AdditionalSelectionCriteriaGeographicOption2PersistentPovertyCounty_6.setVisible(true);lyr_AdditionalSelectionCriteriaGeographicOption1CEJSTEnergy_7.setVisible(true);lyr_Category1Eligibility_8.setVisible(true);lyr_InvestorOwnedUtilityTerritories_9.setVisible(true);lyr_CoopUtilityTerritoriesTouchstoneEnergyCooperatives_10.setVisible(true);lyr_Pennsylvania_11.setVisible(true);lyr_PennsylvaniaCounties_12.setVisible(true);lyr_PennsylvaniaCountyNames_13.setVisible(false);lyr_SignedParcelslastupdated112723_14.setVisible(true);lyr_SignedParcelslastupdated112723_15.setVisible(true);lyr_ParcelNames_16.setVisible(false);
-var layersList = [group_Basemaps,group_EnergyCommunities,group_48eLowIncomeCredits,lyr_InvestorOwnedUtilityTerritories_9,lyr_CoopUtilityTerritoriesTouchstoneEnergyCooperatives_10,lyr_Pennsylvania_11,lyr_PennsylvaniaCounties_12,lyr_PennsylvaniaCountyNames_13,lyr_SignedParcelslastupdated112723_14,lyr_SignedParcelslastupdated112723_15,lyr_ParcelNames_16];
+lyr_GoogleTerrain_0.setVisible(true);lyr_GoogleImagery_1.setVisible(true);lyr_ESRIGray_2.setVisible(true);lyr_OpenStreetMap_3.setVisible(true);lyr_CoalClosureEnergyCommunities_4.setVisible(true);lyr_MSANonMSAsthatareEnergyCommunities_5.setVisible(true);lyr_AdditionalSelectionCriteriaGeographicOption2PersistentPovertyCounty_6.setVisible(true);lyr_AdditionalSelectionCriteriaGeographicOption1CEJSTEnergy_7.setVisible(true);lyr_Category1Eligibility_8.setVisible(true);lyr_InvestorOwnedUtilityTerritories_9.setVisible(true);lyr_CoopUtilityTerritoriesTouchstoneEnergyCooperatives_10.setVisible(true);lyr_Pennsylvania_11.setVisible(true);lyr_PennsylvaniaCounties_12.setVisible(true);lyr_PennsylvaniaCountyNames_13.setVisible(false);lyr_SignedParcelslastupdated21224_14.setVisible(true);lyr_SignedParcelNameslastupdated21224_15.setVisible(false);
+var layersList = [group_Basemaps,group_EnergyCommunities,group_48eLowIncomeCredits,lyr_InvestorOwnedUtilityTerritories_9,lyr_CoopUtilityTerritoriesTouchstoneEnergyCooperatives_10,lyr_Pennsylvania_11,lyr_PennsylvaniaCounties_12,lyr_PennsylvaniaCountyNames_13,lyr_SignedParcelslastupdated21224_14,lyr_SignedParcelNameslastupdated21224_15];
 lyr_CoalClosureEnergyCommunities_4.set('fieldAliases', {'objectid': 'OBJECTID', 'affgeoid_tract_2020': 'AFFGEOID_Tract_2020', 'fipstate_2020': 'fipstate_2020', 'fipcounty_2020': 'fipcounty_2020', 'geoid_county_2020': 'geoid_county_2020', 'fiptract_2020': 'fiptract_2020', 'geoid_tract_2020': 'geoid_tract_2020', 'mine_qual': 'Mine_Qual', 'generator_qual': 'Generator_Qual', 'neighbor_qual': 'Neighbor_Qual', 'state_name': 'State_Name', 'county_name': 'County_Name', 'censustract_name': 'CensusTract_Name', 'mine_closure': 'Mine_Closure', 'generator_closure': 'Generator_Closure', 'adjacent_to_closure': 'Adjacent_to_Closure', 'tract_status': 'Tract_Status', 'date_last_update': 'date_last_update', 'dataset_version': 'dataset_version', 'record_added': 'record_added', 'symbol': 'Symbol', 'SHAPE__Length': 'SHAPE__Length', 'SHAPE__Area': 'SHAPE__Area', });
 lyr_MSANonMSAsthatareEnergyCommunities_5.set('fieldAliases', {'objectid_1': 'OBJECTID_1', 'objectid': 'ObjectID', 'affgeoid_cty_2020': 'AFFGEOID_COUNTY_2020', 'fipstate_2020': 'fipstate_2020', 'fipscty_2020': 'fipscounty_2020', 'geoid_cty_2020': 'geoid_county_2020', 'county_name_2020': 'county_name_2020', 'state_name': 'state_name', 'msa_area_id': 'MSA_area_ID_2020', 'msa_area_name': 'MSA_area_name_2020', 'ffe_ind_qual': 'ffe_ind_qual', 'ec_ind_qual': 'ec_ind_qual', 'msa_qual': 'msa_qual', 'fee_qual_status': 'FEE_qual_status', 'ec_qual_status': 'EC_qual_status', 'label_fee': 'Label_FEE', 'label_ec': 'Label_EC', 'msa_nmsa_label': 'Label_MSA_NMSA', 'date_last_update': 'date_last_update', 'dataset_version': 'dataset_version', 'date_record_added': 'date_record_added', 'globalid': 'globalid', 'SHAPE__Length': 'SHAPE__Length', 'SHAPE__Area': 'SHAPE__Area', });
 lyr_AdditionalSelectionCriteriaGeographicOption2PersistentPovertyCounty_6.set('fieldAliases', {'GEOID': 'GEOID', 'NAME': 'NAME', 'Persistent': 'Persistent', 'Persiste_1': 'Persiste_1', 'Persiste_2': 'Persiste_2', 'Persiste_3': 'Persiste_3', 'ObjectId': 'ObjectId', 'Shape__Area': 'Shape__Area', 'Shape__Length': 'Shape__Length', });
@@ -270,9 +256,8 @@ lyr_CoopUtilityTerritoriesTouchstoneEnergyCooperatives_10.set('fieldAliases', {'
 lyr_Pennsylvania_11.set('fieldAliases', {'STATE': 'STATE', 'NAME': 'NAME', 'FIPS': 'FIPS', 'LON': 'LON', 'LAT': 'LAT', });
 lyr_PennsylvaniaCounties_12.set('fieldAliases', {'STATEFP': 'STATEFP', 'COUNTYFP': 'COUNTYFP', 'COUNTYNS': 'COUNTYNS', 'GEOID': 'GEOID', 'NAME': 'NAME', 'NAMELSAD': 'NAMELSAD', 'LSAD': 'LSAD', 'CLASSFP': 'CLASSFP', 'MTFCC': 'MTFCC', 'CSAFP': 'CSAFP', 'CBSAFP': 'CBSAFP', 'METDIVFP': 'METDIVFP', 'FUNCSTAT': 'FUNCSTAT', 'ALAND': 'ALAND', 'AWATER': 'AWATER', 'INTPTLAT': 'INTPTLAT', 'INTPTLON': 'INTPTLON', });
 lyr_PennsylvaniaCountyNames_13.set('fieldAliases', {'STATEFP': 'STATEFP', 'COUNTYFP': 'COUNTYFP', 'COUNTYNS': 'COUNTYNS', 'GEOID': 'GEOID', 'NAME': 'NAME', 'NAMELSAD': 'NAMELSAD', 'LSAD': 'LSAD', 'CLASSFP': 'CLASSFP', 'MTFCC': 'MTFCC', 'CSAFP': 'CSAFP', 'CBSAFP': 'CBSAFP', 'METDIVFP': 'METDIVFP', 'FUNCSTAT': 'FUNCSTAT', 'ALAND': 'ALAND', 'AWATER': 'AWATER', 'INTPTLAT': 'INTPTLAT', 'INTPTLON': 'INTPTLON', });
-lyr_SignedParcelslastupdated112723_14.set('fieldAliases', {'id': 'id', 'Parcel': 'Parcel', 'owner': 'owner', 'bldblAcr': 'bldblAcr', 'LotSize': 'LotSize', 'Utility': 'Utility', });
-lyr_SignedParcelslastupdated112723_15.set('fieldAliases', {'id': 'id', 'Parcel': 'Parcel', 'owner': 'owner', 'bldblAcr': 'bldblAcr', 'LotSize': 'LotSize', 'Utility': 'Utility', });
-lyr_ParcelNames_16.set('fieldAliases', {'id': 'id', 'Parcel': 'Parcel', 'owner': 'owner', 'bldblAcr': 'bldblAcr', 'LotSize': 'LotSize', 'Utility': 'Utility', });
+lyr_SignedParcelslastupdated21224_14.set('fieldAliases', {'Opportunity Name': 'Opportunity Name', 'Account Name': 'Account Name', 'Lease Area (Acres or Square Feet)': 'Lease Area (Acres or Square Feet)', 'AO Link': 'AO Link', 'Site Lat/Long Coordinates (Latitude)': 'Site Lat/Long Coordinates (Latitude)', 'Site Lat/Long Coordinates (Longitude)': 'Site Lat/Long Coordinates (Longitude)', 'Market': 'Market', 'Utility': 'Utility', });
+lyr_SignedParcelNameslastupdated21224_15.set('fieldAliases', {'Opportunity Name': 'Opportunity Name', 'Account Name': 'Account Name', 'Lease Area (Acres or Square Feet)': 'Lease Area (Acres or Square Feet)', 'AO Link': 'AO Link', 'Site Lat/Long Coordinates (Latitude)': 'Site Lat/Long Coordinates (Latitude)', 'Site Lat/Long Coordinates (Longitude)': 'Site Lat/Long Coordinates (Longitude)', 'Market': 'Market', 'Utility': 'Utility', });
 lyr_CoalClosureEnergyCommunities_4.set('fieldImages', {'objectid': 'TextEdit', 'affgeoid_tract_2020': 'TextEdit', 'fipstate_2020': 'TextEdit', 'fipcounty_2020': 'TextEdit', 'geoid_county_2020': 'TextEdit', 'fiptract_2020': 'TextEdit', 'geoid_tract_2020': 'TextEdit', 'mine_qual': 'TextEdit', 'generator_qual': 'TextEdit', 'neighbor_qual': 'TextEdit', 'state_name': 'TextEdit', 'county_name': 'TextEdit', 'censustract_name': 'TextEdit', 'mine_closure': 'TextEdit', 'generator_closure': 'TextEdit', 'adjacent_to_closure': 'TextEdit', 'tract_status': 'TextEdit', 'date_last_update': 'DateTime', 'dataset_version': 'TextEdit', 'record_added': 'DateTime', 'symbol': 'TextEdit', 'SHAPE__Length': 'TextEdit', 'SHAPE__Area': 'TextEdit', });
 lyr_MSANonMSAsthatareEnergyCommunities_5.set('fieldImages', {'objectid_1': 'TextEdit', 'objectid': 'TextEdit', 'affgeoid_cty_2020': 'TextEdit', 'fipstate_2020': 'TextEdit', 'fipscty_2020': 'TextEdit', 'geoid_cty_2020': 'TextEdit', 'county_name_2020': 'TextEdit', 'state_name': 'TextEdit', 'msa_area_id': 'TextEdit', 'msa_area_name': 'TextEdit', 'ffe_ind_qual': 'TextEdit', 'ec_ind_qual': 'TextEdit', 'msa_qual': 'TextEdit', 'fee_qual_status': 'TextEdit', 'ec_qual_status': 'TextEdit', 'label_fee': 'TextEdit', 'label_ec': 'TextEdit', 'msa_nmsa_label': 'TextEdit', 'date_last_update': 'DateTime', 'dataset_version': 'TextEdit', 'date_record_added': 'DateTime', 'globalid': 'TextEdit', 'SHAPE__Length': 'TextEdit', 'SHAPE__Area': 'TextEdit', });
 lyr_AdditionalSelectionCriteriaGeographicOption2PersistentPovertyCounty_6.set('fieldImages', {'GEOID': 'TextEdit', 'NAME': 'TextEdit', 'Persistent': 'TextEdit', 'Persiste_1': 'TextEdit', 'Persiste_2': 'TextEdit', 'Persiste_3': 'Range', 'ObjectId': 'TextEdit', 'Shape__Area': 'TextEdit', 'Shape__Length': 'TextEdit', });
@@ -283,9 +268,8 @@ lyr_CoopUtilityTerritoriesTouchstoneEnergyCooperatives_10.set('fieldImages', {'O
 lyr_Pennsylvania_11.set('fieldImages', {'STATE': 'TextEdit', 'NAME': 'TextEdit', 'FIPS': 'TextEdit', 'LON': 'TextEdit', 'LAT': 'TextEdit', });
 lyr_PennsylvaniaCounties_12.set('fieldImages', {'STATEFP': 'TextEdit', 'COUNTYFP': 'TextEdit', 'COUNTYNS': 'TextEdit', 'GEOID': 'TextEdit', 'NAME': 'TextEdit', 'NAMELSAD': 'TextEdit', 'LSAD': 'TextEdit', 'CLASSFP': 'TextEdit', 'MTFCC': 'TextEdit', 'CSAFP': 'TextEdit', 'CBSAFP': 'TextEdit', 'METDIVFP': 'TextEdit', 'FUNCSTAT': 'TextEdit', 'ALAND': 'TextEdit', 'AWATER': 'TextEdit', 'INTPTLAT': 'TextEdit', 'INTPTLON': 'TextEdit', });
 lyr_PennsylvaniaCountyNames_13.set('fieldImages', {'STATEFP': 'TextEdit', 'COUNTYFP': 'TextEdit', 'COUNTYNS': 'TextEdit', 'GEOID': 'TextEdit', 'NAME': 'TextEdit', 'NAMELSAD': 'TextEdit', 'LSAD': 'TextEdit', 'CLASSFP': 'TextEdit', 'MTFCC': 'TextEdit', 'CSAFP': 'TextEdit', 'CBSAFP': 'TextEdit', 'METDIVFP': 'TextEdit', 'FUNCSTAT': 'TextEdit', 'ALAND': 'TextEdit', 'AWATER': 'TextEdit', 'INTPTLAT': 'TextEdit', 'INTPTLON': 'TextEdit', });
-lyr_SignedParcelslastupdated112723_14.set('fieldImages', {'id': 'TextEdit', 'Parcel': 'TextEdit', 'owner': 'TextEdit', 'bldblAcr': 'TextEdit', 'LotSize': 'TextEdit', 'Utility': 'TextEdit', });
-lyr_SignedParcelslastupdated112723_15.set('fieldImages', {'id': 'TextEdit', 'Parcel': 'TextEdit', 'owner': 'TextEdit', 'bldblAcr': 'TextEdit', 'LotSize': 'TextEdit', 'Utility': 'TextEdit', });
-lyr_ParcelNames_16.set('fieldImages', {'id': 'TextEdit', 'Parcel': 'TextEdit', 'owner': 'TextEdit', 'bldblAcr': 'TextEdit', 'LotSize': 'TextEdit', 'Utility': 'TextEdit', });
+lyr_SignedParcelslastupdated21224_14.set('fieldImages', {'Opportunity Name': 'TextEdit', 'Account Name': 'TextEdit', 'Lease Area (Acres or Square Feet)': 'TextEdit', 'AO Link': 'TextEdit', 'Site Lat/Long Coordinates (Latitude)': 'TextEdit', 'Site Lat/Long Coordinates (Longitude)': 'TextEdit', 'Market': 'TextEdit', 'Utility': 'TextEdit', });
+lyr_SignedParcelNameslastupdated21224_15.set('fieldImages', {'Opportunity Name': 'TextEdit', 'Account Name': 'TextEdit', 'Lease Area (Acres or Square Feet)': 'TextEdit', 'AO Link': 'TextEdit', 'Site Lat/Long Coordinates (Latitude)': 'TextEdit', 'Site Lat/Long Coordinates (Longitude)': 'TextEdit', 'Market': 'TextEdit', 'Utility': 'TextEdit', });
 lyr_CoalClosureEnergyCommunities_4.set('fieldLabels', {});
 lyr_MSANonMSAsthatareEnergyCommunities_5.set('fieldLabels', {});
 lyr_AdditionalSelectionCriteriaGeographicOption2PersistentPovertyCounty_6.set('fieldLabels', {});
@@ -294,11 +278,10 @@ lyr_Category1Eligibility_8.set('fieldLabels', {});
 lyr_InvestorOwnedUtilityTerritories_9.set('fieldLabels', {'OBJECTID': 'no label', 'ID': 'no label', 'NAME': 'no label', 'ADDRESS': 'no label', 'CITY': 'no label', 'STATE': 'no label', 'ZIP': 'no label', 'TELEPHONE': 'no label', 'TYPE': 'no label', 'COUNTRY': 'no label', 'NAICS_CODE': 'no label', 'NAICS_DESC': 'no label', 'SOURCE': 'no label', 'SOURCEDATE': 'no label', 'VAL_METHOD': 'no label', 'VAL_DATE': 'no label', 'WEBSITE': 'no label', 'REGULATED': 'no label', 'CNTRL_AREA': 'no label', 'PLAN_AREA': 'no label', 'HOLDING_CO': 'no label', 'SUMMR_PEAK': 'no label', 'WINTR_PEAK': 'no label', 'SUMMER_CAP': 'no label', 'WINTER_CAP': 'no label', 'NET_GEN': 'no label', 'PURCHASED': 'no label', 'NET_EX': 'no label', 'RETAIL_MWH': 'no label', 'WSALE_MWH': 'no label', 'TOTAL_MWH': 'no label', 'TRANS_MWH': 'no label', 'CUSTOMERS': 'no label', 'YEAR': 'no label', 'Shape__Are': 'no label', 'Shape__Len': 'no label', });
 lyr_CoopUtilityTerritoriesTouchstoneEnergyCooperatives_10.set('fieldLabels', {'OBJECTID': 'no label', 'ID': 'no label', 'NAME': 'no label', 'ADDRESS': 'no label', 'CITY': 'no label', 'STATE': 'no label', 'ZIP': 'no label', 'TELEPHONE': 'no label', 'TYPE': 'no label', 'COUNTRY': 'no label', 'NAICS_CODE': 'no label', 'NAICS_DESC': 'no label', 'SOURCE': 'no label', 'SOURCEDATE': 'no label', 'VAL_METHOD': 'no label', 'VAL_DATE': 'no label', 'WEBSITE': 'no label', 'REGULATED': 'no label', 'CNTRL_AREA': 'no label', 'PLAN_AREA': 'no label', 'HOLDING_CO': 'no label', 'SUMMR_PEAK': 'no label', 'WINTR_PEAK': 'no label', 'SUMMER_CAP': 'no label', 'WINTER_CAP': 'no label', 'NET_GEN': 'no label', 'PURCHASED': 'no label', 'NET_EX': 'no label', 'RETAIL_MWH': 'no label', 'WSALE_MWH': 'no label', 'TOTAL_MWH': 'no label', 'TRANS_MWH': 'no label', 'CUSTOMERS': 'no label', 'YEAR': 'no label', 'Shape__Are': 'no label', 'Shape__Len': 'no label', });
 lyr_Pennsylvania_11.set('fieldLabels', {'STATE': 'no label', 'NAME': 'no label', 'FIPS': 'no label', 'LON': 'no label', 'LAT': 'no label', });
-lyr_PennsylvaniaCounties_12.set('fieldLabels', {'STATEFP': 'no label', 'COUNTYFP': 'no label', 'COUNTYNS': 'no label', 'GEOID': 'no label', 'NAME': 'header label', 'NAMELSAD': 'no label', 'LSAD': 'no label', 'CLASSFP': 'no label', 'MTFCC': 'no label', 'CSAFP': 'no label', 'CBSAFP': 'no label', 'METDIVFP': 'no label', 'FUNCSTAT': 'no label', 'ALAND': 'no label', 'AWATER': 'no label', 'INTPTLAT': 'no label', 'INTPTLON': 'no label', });
-lyr_PennsylvaniaCountyNames_13.set('fieldLabels', {'STATEFP': 'no label', 'COUNTYFP': 'no label', 'COUNTYNS': 'no label', 'GEOID': 'no label', 'NAME': 'header label', 'NAMELSAD': 'no label', 'LSAD': 'no label', 'CLASSFP': 'no label', 'MTFCC': 'no label', 'CSAFP': 'no label', 'CBSAFP': 'no label', 'METDIVFP': 'no label', 'FUNCSTAT': 'no label', 'ALAND': 'no label', 'AWATER': 'no label', 'INTPTLAT': 'no label', 'INTPTLON': 'no label', });
-lyr_SignedParcelslastupdated112723_14.set('fieldLabels', {'id': 'no label', 'Parcel': 'header label', 'owner': 'inline label', 'bldblAcr': 'header label', 'LotSize': 'inline label', 'Utility': 'inline label', });
-lyr_SignedParcelslastupdated112723_15.set('fieldLabels', {'id': 'no label', 'Parcel': 'header label', 'owner': 'inline label', 'bldblAcr': 'inline label', 'LotSize': 'inline label', 'Utility': 'inline label', });
-lyr_ParcelNames_16.set('fieldLabels', {'id': 'no label', 'Parcel': 'header label', 'owner': 'inline label', 'bldblAcr': 'no label', 'LotSize': 'no label', 'Utility': 'no label', });
-lyr_ParcelNames_16.on('precompose', function(evt) {
+lyr_PennsylvaniaCounties_12.set('fieldLabels', {'STATEFP': 'no label', 'COUNTYFP': 'no label', 'COUNTYNS': 'no label', 'GEOID': 'no label', 'NAME': 'header label - visible with data', 'NAMELSAD': 'no label', 'LSAD': 'no label', 'CLASSFP': 'no label', 'MTFCC': 'no label', 'CSAFP': 'no label', 'CBSAFP': 'no label', 'METDIVFP': 'no label', 'FUNCSTAT': 'no label', 'ALAND': 'no label', 'AWATER': 'no label', 'INTPTLAT': 'no label', 'INTPTLON': 'no label', });
+lyr_PennsylvaniaCountyNames_13.set('fieldLabels', {'STATEFP': 'no label', 'COUNTYFP': 'no label', 'COUNTYNS': 'no label', 'GEOID': 'no label', 'NAME': '', 'NAMELSAD': 'no label', 'LSAD': 'no label', 'CLASSFP': 'no label', 'MTFCC': 'no label', 'CSAFP': 'no label', 'CBSAFP': 'no label', 'METDIVFP': 'no label', 'FUNCSTAT': 'no label', 'ALAND': 'no label', 'AWATER': 'no label', 'INTPTLAT': 'no label', 'INTPTLON': 'no label', });
+lyr_SignedParcelslastupdated21224_14.set('fieldLabels', {'Opportunity Name': 'no label', 'Account Name': 'no label', 'Lease Area (Acres or Square Feet)': 'no label', 'AO Link': 'no label', 'Site Lat/Long Coordinates (Latitude)': 'no label', 'Site Lat/Long Coordinates (Longitude)': 'no label', 'Market': 'no label', 'Utility': '', });
+lyr_SignedParcelNameslastupdated21224_15.set('fieldLabels', {'Opportunity Name': 'header label - visible with data', 'Account Name': 'header label - visible with data', 'Lease Area (Acres or Square Feet)': 'header label - visible with data', 'AO Link': 'header label - visible with data', 'Site Lat/Long Coordinates (Latitude)': 'header label - visible with data', 'Site Lat/Long Coordinates (Longitude)': 'header label - visible with data', 'Market': 'header label - visible with data', 'Utility': 'header label - visible with data', });
+lyr_SignedParcelNameslastupdated21224_15.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
